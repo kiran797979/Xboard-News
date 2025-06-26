@@ -1,0 +1,81 @@
+/* Reset */
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+/* Link styles inside card */
+.card > a {
+  text-decoration: none;
+  color: black;
+}
+.card > a:hover {
+  color: black;
+}
+
+/* Image styling */
+img {
+  height: 50vh;
+  object-fit: cover;
+}
+
+/* Logo button */
+#logo-button {
+  position: absolute;
+  width: 27px;
+  height: 9px;
+  top: 8px;
+  background: linear-gradient(96.34deg, #E537B9 0%, #C040DF 100%);
+  border-radius: 4.5px;
+  border: none;
+}
+
+/* Point indicator */
+#point {
+  padding: 3px;
+  position: relative;
+  bottom: 4px;
+  background-color: #6c757d;
+  border: none;
+  border-radius: 50%;
+}
+
+/* Accordion styles */
+.accordion-item {
+  background-color: #fff;
+  border: none;
+}
+
+.accordion-body {
+  padding-left: 0 !important;
+}
+
+.accordion-button {
+  font-weight: bold;
+  padding-left: 0 !important;
+  color: black !important;
+  background-color: #fff !important;
+  box-shadow: none !important;
+  position: relative;
+}
+
+.accordion-button:focus {
+  z-index: 3;
+  border-color: transparent !important;
+  outline: 0;
+  box-shadow: none !important;
+}
+
+.accordion-button::after {
+  display: none;
+}
+
+/* Custom accordion toggle icon */
+.accordion-button::before {
+  content: "";
+  flex-shrink: 0;
+  width: 1.25rem;
+  height: 1.25rem;
+  margin-right: 0.5rem;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.
